@@ -12,6 +12,7 @@ app.use(morgan('dev'));
 const dishRouter = require('./routes/dishRouter');
 
 app.use('/dishes', dishRouter);
+//app.use('/dishes/dishID', dishRouter);
 // app.all('/dishes', (req,res,next) => {
 //   res.statusCode = 200;
 //   res.setHeader('Content-Type', 'text/plain');
