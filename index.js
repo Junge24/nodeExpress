@@ -10,8 +10,11 @@ const app = express();
 app.use(morgan('dev'));
 // app.use(bodyParser.json());
 const dishRouter = require('./routes/dishRouter');
-
+const promotionRouter = require('./routes/promotionRouter');
+const leaderRouter = require('./routes/leaderRouter');
 app.use('/dishes', dishRouter);
+app.use('/promotions', promotionRouter);
+app.use('/leaders', leaderRouter);
 //app.use('/dishes/dishID', dishRouter);
 // app.all('/dishes', (req,res,next) => {
 //   res.statusCode = 200;
